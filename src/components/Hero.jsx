@@ -41,7 +41,7 @@ function Hero() {
         <div className='flex flex-wrap justify-between items-center lg:mr-700 md:pt-60 pt-20'>
             {
                 contentHero.statistice.map((item, index)=>(
-                    <div>
+                    <div key={index}>
                         <h2 className='font-semibold text-2xl md:text-3xl'>{item.title}</h2>
                         <p className='text-[#00000099] text-[12px] mt-5'>{item.paragraph}</p>
                     </div>

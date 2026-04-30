@@ -55,11 +55,12 @@ function SectionNew() {
     
         <div className='flex  flex-wrap items-center gap-30 md:my-50'>
           {
-            filteredProducts.map((item ,index)=>(
-              <Card item={item} key={index}/>
+            filteredProducts.map((item,index)=>(
+              <Card key={index} item={item} />
             
             ))
           }
+          
         </div>
         <div className='text-center my-10'>
         <ViewAll />

@@ -91,8 +91,8 @@ function Footer() {
        <p className='text-[#595959] text-[14px]'>Shop.co © 2000-2023, All Rights Reserved <span className='font-semibold text-black'>By Safaa Tr</span></p>
        <div className='flex items-center gap-6'>
          {
-          icons[1].iconBadge.map((item,index)=>(
-            <Link to="#"><img key={index} src={item.icon} alt="iconBadge" /></Link>
+          icons[1].iconBadge.map((item,i)=>(
+            <Link to="#" key={i} ><img   src={item.icon} alt="iconBadge" /></Link>
             
           ))
          }

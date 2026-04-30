@@ -24,7 +24,7 @@ function Card({item}) {
                   <div className='flex justify-between items-center gap-120'>
                       <p className='text-[14px] font-semibold'>${item.price}</p>
                       {
-                          item.price <=50 ?   <button className='text-[12px] w-60 h-30 bg-[#fab9b9] text-red-500 rounded-2xl'><Link to={`/Product/${item.id}`}>On sale</Link></button> :""
+                          item.price <=50 ?   <button className='text-[12px] w-60 h-30 bg-[#fab9b9] text-red-500 rounded-2xl'>On sale</button> :""
                       }
                     
                   </div>

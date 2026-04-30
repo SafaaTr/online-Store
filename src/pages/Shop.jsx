@@ -123,8 +123,8 @@ function Shop() {
         {  filteredProducts.length===0 ?
           (  <p className="text-xl font-semibold text-gray-700 md:mt-50"> No products found</p>
           ):(
-            filteredProducts.map(item=>(
-              <div className=''><Card item={item}/>
+            filteredProducts.map((item ,i)=>(
+              <div className='' key={i}><Card item={item}/>
               </div>
               
             ))
