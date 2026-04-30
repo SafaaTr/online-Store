@@ -1,0 +1,75 @@
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import TitleSection from './TitleSection'
+import axios from 'axios'
+import Card from './Card'
+import ViewAll from './ViewAll'
+import { RiTumblrFill } from 'react-icons/ri'
+// import { useOutletContext } from 'react-router-dom';
+
+function SectionNew() {
+  const [products, setProducts]=useState([])
+  const [loading, setLoading] = useState(true);//تحميل العناصر 
+
+
+  useEffect(()=>{
+    axios.get("https://fakestoreapi.com/products")
+    .then(res=>{
+      setProducts(res.data)
+      setLoading(false)
+    })
+ 
+
+  },[])
+   const filteredProducts=products.filter(item=>item.category==="women's clothing").slice(0,4)
+
+   if (loading) {
+    return(
+    <div className='mx-20 lg:mx-70 my-20 lg:my-50'>
+      <div className=' md:my-60 '>
+        <div className='text-center my-10'>
+          <TitleSection title="NEW ARRIVALS"/>
+        </div>
+        <div className='flex  flex-wrap items-center gap-30 md:my-50'>
+          {[1,2,3,4].map(i=>(
+            <div key={i} className='a animate-pulse w-300 bg-white rounded-xl shadow-md p-20'>
+              <div className='bg-gray-200 h-150 w-full rounded-xl mb-10'></div>
+              <div className='bg-gray-200 h-20 w-3/4 rounded mb-4'></div>
+              <div className='bg-gray-200 h-20 w-1/2 rounded mb-4'></div>
+              <div className='bg-gray-200 h-20 w-1/3 rounded '></div>
+
+            </div>
+          )) }
+        </div>
+      </div>
+    </div>
+    )
+   }
+  return (
+   <>
+    <div className='mx-20 lg:mx-70 my-20 lg:my-50'>
+      <div className=' md:my-60 '>
+        <div className='text-center my-10'>
+        <TitleSection title="NEW ARRIVALS"/>
+        </div>
+    
+        <div className='flex  flex-wrap items-center gap-30 md:my-50'>
+          {
+            filteredProducts.map((item ,index)=>(
+              <Card item={item} key={index}/>
+            
+            ))
+          }
+        </div>
+        <div className='text-center my-10'>
+        <ViewAll />
+        </div>
+       
+      </div>
+    </div>
+    <div className='border-b border-[#d1d5dc] my-10'></div>
+   </>
+  )
+}
+
+export default SectionNew
