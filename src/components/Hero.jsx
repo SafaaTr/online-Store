@@ -32,13 +32,13 @@ function Hero() {
     }
   
   return (
-    <div className='pt-20 md:pt-100 lg:ml-70 px-20'>
+    <div className='pt-30 md:pt-100 lg:ml-70 px-20'>
         <h1 className='text-3xl md:text-6xl  lg:font-bold mt-20 md:mt-0 md:my-20 font-semibold lg:pr-700'>{contentHero.title}</h1>
         <p className='text-[#00000099] text-[16px] lg:pr-680 z-30 my-10 md:my-32'>{contentHero.paragraph}</p>
         <button className='w-190 h-50 bg-black text-white text-center rounded-3xl cursor-pointer transition-all duration-300  hover:-translate-y-3 hover:shadow-2xl'>
             <Link to="/shop">{contentHero.textButton}</Link>
         </button>
-        <div className='flex flex-wrap justify-between items-center lg:mr-700 pt-20'>
+        <div className='flex flex-wrap gap-10 justify-between items-center lg:mr-700 pt-20'>
             {
                 contentHero.statistice.map((item, index)=>(
                     <div key={index}>

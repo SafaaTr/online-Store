@@ -49,10 +49,13 @@ function TopRated() {
       <TitleSection title="TOP SELLING PRODUCTS"/>
       </div>
   
-      <div className='flex flex-wrap items-center gap-30 md:my-50'>
+      <div className='md:flex flex-wrap items-center gap-30 md:my-50'>
         {
           filteredProducts.map((item ,index)=>(
-            <Card item={item} key={index}/>
+            <div  key={index} className='md:mt-0 mt-20'>
+                <Card item={item}/>
+            </div>
+          
           
           ))
         }

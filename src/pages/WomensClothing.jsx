@@ -103,12 +103,12 @@ function WomensClothing() {
           selectedCategories={selectedCategories}
           setSelectedCategories={setSelectedCategories}
         />
-        <div className='md:grid flex flex-wrap   lg:grid-cols-3 gap-12 mt-20'>
+        <div className='md:grid   flex-wrap   lg:grid-cols-3 gap-12 mt-20'>
         {  filteredProducts.length===0 ?
           (  <p className="text-xl font-semibold text-gray-700"> No products found</p>
           ):(
             filteredProducts.map((item ,i)=>(
-              <div className=''key={i}><Card item={item}/>
+              <div className='md:mt-0 mt-20'key={i}><Card item={item} />
               </div>
               
             ))
