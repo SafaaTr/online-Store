@@ -52,11 +52,11 @@ function Links({onClickItem ,  setSearchValue }) {
             />
         </div>
          {mainLinks.map((item , index )=>(
-            <div key={index} className=' relative   sm:my-10'>
+            <div key={index} className=' relative md:my-0  my-20'>
              {
                 item.name==="Categories" ?(
                   <>
-                  <button onClick={()=>{ setCategories(!categories)}} className=' mt-3 my-6 flex font-medium transition-colors duration-200 hover:bg-black hover:text-white hover:rounded-lg hover:py-10 hover:px-10 '><IoMdArrowDropdown size={30}/> {item.name}</button>
+                  <button onClick={()=>{ setCategories(!categories)}} className=' mt-3  flex font-medium transition-colors duration-200 hover:bg-black hover:text-white hover:rounded-lg hover:py-10 hover:px-10 '><IoMdArrowDropdown size={30}/> {item.name}</button>
                   {
                       categories &&(
                       <div className=' md:absolute w-200 left-0  bg-white  z-50 mt-2 py-4 shadow-2xl pl-10 '>
@@ -75,7 +75,7 @@ function Links({onClickItem ,  setSearchValue }) {
                       )}
                   </>
               ): item.isSearch ? ( 
-                  <div className=' hidden sm:hidden   md:flex relative  items-center sm:my-2'>
+                  <div className=' hidden sm:hidden   md:flex relative  items-center my-14 md:my-0'>
                       <button onClick={()=>setShowSearch(!showSearch)} className=''  >
                         
                       </button>
@@ -97,7 +97,7 @@ function Links({onClickItem ,  setSearchValue }) {
                       <NavLink
                         onClick={()=>{onClickItem && onClickItem()}}
                         to={item.path} 
-                        className={` group font-medium  transition-colors duration-200 hover:bg-black hover:text-white hover:rounded-lg hover:py-10 hover:px-10  `}>
+                        className={` group font-medium  transition-colors duration-200 hover:bg-black hover:text-white hover:rounded-lg hover:py-10 hover:px-10 my-14 md:my-0  `}>
                         {item.name}{item.icon}
                       </NavLink>
                       {

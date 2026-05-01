@@ -63,8 +63,8 @@ function Footer() {
   ]
   return (
     <footer className=' bg-[#f0f0f0] px-20 py-30 md:px-70 md:py-60 '>
-      <div className=' flex flex-wrap justify-between items-center gap-10'>
-        <div>
+      <div className=' flex flex-wrap justify-between items-center gap-15 '>
+        <div className=''>
           <h1 className='text-4xl font-bold mb-10'>Shop.Co</h1>
           <p className='md:w-400 text-[#595959] text-[14px] my-20'>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
           <div className='flex gap-6 mt-30 '>
@@ -77,7 +77,7 @@ function Footer() {
         </div>
         {
           contentFooter.map((item ,index)=>(
-            <div key={index}>
+            <div key={index} className='md:mt-0 mt-10'>
               <h2 className=' font-semibold mb-20'>{item.address}</h2>
               <p className='text-[14px] font-sans my-4 text-[#595959] hover:text-black'><a href="#">{item.title1}</a> </p>
               <p className='text-[14px] font-sans my-4 text-[#595959] hover:text-black'> <a href="#">{item.title2}</a></p>
@@ -87,9 +87,9 @@ function Footer() {
           ))
         }
       </div> 
-      <div className=' border-t border-[#595959] md:mt-40  md:flex justify-between items-center pt-40'>
+      <div className=' border-t border-[#595959] mt-40   md:flex justify-between items-center pt-40'>
        <p className='text-[#595959] text-[14px]'>Shop.co © 2000-2023, All Rights Reserved <span className='font-semibold text-black'>By Safaa Tr</span></p>
-       <div className='flex items-center gap-6'>
+       <div className='flex items-center gap-6 md:mt-0 mt-10'>
          {
           icons[1].iconBadge.map((item,i)=>(
             <Link to="#" key={i} ><img   src={item.icon} alt="iconBadge" /></Link>

@@ -87,12 +87,12 @@ function ProductDetails() {
     
     <div className='md:flex justify-between gap-20 items-center mt-120 md:my-100 my-30 md:mt-180 md:mx-70 mx-20'>
       <div className='md:w-400 md:h-300  bg-gray-100 rounded-2xl flex justify-center items-center'>
-      <img src={product.image} alt={product.title} className='md:w-200 md:h-200  object-contain ' />
+      <img src={product.image} alt={product.title} className='md:w-200  h-200  object-contain ' />
       </div>
      
       <div className='md:w-700 md:mt-0 mt-20'>
         <h1 className='text-xl md:text-3xl font-semibold my-10 md:w-[80%]'>{product.title}</h1>
-        <div className='flex gap-30 my-20'>
+        <div className='flex items-center gap-30 my-20'>
           <RatingStars rate={product?.rating?.rate}/>
           <p className='text-[#00000099] text-[12px]'>{product?.rating?.rate}/5</p>
           <div className='md:ml-100'>

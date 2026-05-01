@@ -9,20 +9,21 @@ function Brands() {
     { img:brands1 },{ img:brands2}, { img:brands3},  {img:brands4}, {img:brands5}
    ]
   return (
-    <div className='px-20 md:px-70 w-full h-60 md:h-80 bg-black flex gap-10 sm:justify-between items-center'>
+    <div className="px-20 md:px-70 w-full h-60 md:h-80 bg-black 
+                flex  justify-center ;md:gap-6 
+                sm:justify-between items-center gap-20">
        
-        {
-          imgbrands.map((item, index) => (
-          <img 
-            key={index}
-            src={item.img} 
-            alt="brand" 
-            className="w-50 h-18 sm:w-110 sm:h-40" 
-          />
-        ))
-        }
+  {imgbrands.map((item, index) => (
+    <img 
+      key={index}
+      src={item.img} 
+      alt="brand" 
+      className="w-50 h-18 sm:w-110 sm:h-40" 
+    />
+  ))}
 
-    </div>
+</div>
+
   )
 }
 
