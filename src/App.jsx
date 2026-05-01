@@ -4,8 +4,8 @@ import './App.css'
 import Auth from './pages/Auth'
 import Layout from './pages/Layout'
 import HomePage from './pages/HomePage'
-import Login from './pages/login'
-import Register from './pages/register'
+import Login from './pages/Login'
+import Register from './pages/Register'
 import Shop from './pages/Shop'
 import Electronics from './pages/Electronics'
 import MensClothing from './pages/MensClothing'
@@ -95,6 +95,7 @@ function App() {
   return (
   <div>
     <RouterProvider router={router}/>
+  
   </div>
   )
 }
