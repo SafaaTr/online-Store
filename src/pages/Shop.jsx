@@ -50,7 +50,7 @@ function Shop() {
 
   if (loading) {
     return (
-      <div className="mt-120 md:mt-170 md:mx-70 px-20 mb-20 md:mb-60">
+      <div className="mt-120 md:mt-170 md:mx-50 px-20 mb-20 md:mb-60">
         <div className=' md:flex  justify-between gap-10  items-start '>
           <div className=' hidden md:block  w-250 sticky top-150'>
           <DesktopFilterSidebar
@@ -62,11 +62,11 @@ function Shop() {
             setSelectedCategories={setSelectedCategories}
           />
           </div>
-          <div className="grid md:grid-cols-3 gap-12 mt-20">
+          <div className="grid lg:grid-cols-3  gap-12 mt-20">
             {[1,2,3,4,5,6].map(i => (
-            <div key={i} className="animate-pulse md:w-300 bg-white rounded-xl shadow-md p-20">
+            <div key={i} className="animate-pulse md:w-280 h-410 bg-white rounded-xl shadow-md p-20">
               
-              <div className="bg-gray-200 h-150 w-full rounded-xl mb-10"></div>
+              <div className="bg-gray-200 h-200 w-full rounded-xl mb-10"></div>
               <div className="bg-gray-200 h-20 w-3/4 rounded mb-4"></div>
               <div className="bg-gray-200 h-20 w-1/2 rounded mb-4"></div>
               <div className="bg-gray-200 h-20 w-1/3 rounded"></div>
@@ -85,7 +85,7 @@ function Shop() {
   
   return (
     <>
-    <div className='mt-120 md:mt-170 md:mx-70 px-20 mb-20 md:mb-60 '>
+    <div className='mt-120 md:mt-170 md:mx-50 px-20 mb-20 md:mb-60 '>
       <div className='mb-30 text-start'>
        <TitleSection title="All Products" />
       </div>
@@ -119,7 +119,7 @@ function Shop() {
     
       
       
-        <div className='md:grid flex flex-wrap lg:grid-cols-3 gap-12 mt-20'>
+        <div className='md:grid flex flex-wrap justify-between lg:grid-cols-3 gap-12 mt-20'>
         {  filteredProducts.length===0 ?
           (  <p className="text-xl font-semibold text-gray-700 md:mt-50"> No products found</p>
           ):(

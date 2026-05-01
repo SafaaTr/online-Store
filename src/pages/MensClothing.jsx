@@ -44,7 +44,7 @@ function MensClothing() {
 
   if (loading) {
     return(
-      <div className='mt-120 md:mt-170 md:mx-70 px-20 mb-20 md:mb-60 '>
+      <div className='mt-120 md:mt-170 md:mx-50 px-20 mb-20 md:mb-60 '>
         <div className='mb-30 text-start'>
           <TitleSection title="women's clothing" />
         </div>
@@ -61,8 +61,8 @@ function MensClothing() {
           </div>
           <div className='grid md:grid-cols-3 gap-12 mt-20'>
             {[1,2,3,4].map(i=>(
-              <div key={i} className='animate-pulse md:w-300 bg-white rounded-xl shadow-md p-20'>
-                <div className="bg-gray-200 h-150 w-full rounded-xl mb-10"></div>
+              <div key={i} className='animate-pulse md:w-280 h-410 bg-white rounded-xl shadow-md p-20'>
+                <div className="bg-gray-200 h-200 w-full rounded-xl mb-10"></div>
                 <div className="bg-gray-200 h-20 w-3/4 rounded mb-4"></div>
                 <div className="bg-gray-200 h-20 w-1/2 rounded mb-4"></div>
                 <div className="bg-gray-200 h-20 w-1/3 rounded"></div>
@@ -77,7 +77,7 @@ function MensClothing() {
    }
   return (
    <>
-    <div className='md:mt-170 md:mx-70 px-20 mb-20 md:mb-60 '>
+    <div className='md:mt-170 md:mx-50 px-20 mb-20 md:mb-60 '>
       <div className='mb-30 text-start'>
         <TitleSection title="men's clothing" />
       </div>

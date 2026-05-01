@@ -38,7 +38,7 @@ function Hero() {
         <button className='w-190 h-50 bg-black text-white text-center rounded-3xl cursor-pointer transition-all duration-300  hover:-translate-y-3 hover:shadow-2xl'>
             <Link to="/shop">{contentHero.textButton}</Link>
         </button>
-        <div className='flex flex-wrap justify-between items-center lg:mr-700 md:pt-60 pt-20'>
+        <div className='flex flex-wrap justify-between items-center lg:mr-700 pt-20'>
             {
                 contentHero.statistice.map((item, index)=>(
                     <div key={index}>

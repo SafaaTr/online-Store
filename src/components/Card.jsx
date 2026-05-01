@@ -8,7 +8,7 @@ function Card({item}) {
   return (
     <div className=''>
       <Link to={`/Product/${item.id}`} >
-        <div className=' border border-gray-100 w-full md:w-290 lg:w-310 rounded-2xl h-420  relative transition-all duration-300  hover:-translate-y-3 hover:shadow-2xl '>
+        <div className=' border border-gray-100 w-full md:w-280  rounded-2xl h-420  relative transition-all duration-300  hover:-translate-y-3 hover:shadow-2xl '>
               <div className='bg-gray-100 w-full h-250 rounded-2xl flex items-center justify-center mb-10  '>
               <img src={item.image} alt={item.title} className='w-200 h-200 p-16' />
               </div>

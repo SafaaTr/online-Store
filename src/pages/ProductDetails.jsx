@@ -85,8 +85,8 @@ function ProductDetails() {
         </div>
       )}
     
-    <div className='md:flex justify-between items-center mt-120 md:my-100 my-30 md:mt-180 md:mx-70 mx-20'>
-      <div className='md:w-500 md:h-300  bg-gray-100 rounded-2xl flex justify-center items-center'>
+    <div className='md:flex justify-between gap-20 items-center mt-120 md:my-100 my-30 md:mt-180 md:mx-70 mx-20'>
+      <div className='md:w-400 md:h-300  bg-gray-100 rounded-2xl flex justify-center items-center'>
       <img src={product.image} alt={product.title} className='md:w-200 md:h-200  object-contain ' />
       </div>
      
