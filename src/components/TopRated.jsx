@@ -21,9 +21,9 @@ function TopRated() {
    const filteredProducts=products.filter(item=>item.rating.rate>=4.5).slice(0,4)
    if (loading) {
     return(
-    <div className='mx-20 lg:mx-50 my-20 lg:my-50'>
+    <div className='mx-20 lg:mx-50 my-35 lg:my-50 '>
       <div className=' md:my-60 '>
-        <div className='text-center my-10'>
+        <div className='text-center my-12  '>
           <TitleSection title="NEW ARRIVALS"/>
         </div>
         <div className='flex  flex-wrap items-center gap-30 md:my-50'>
@@ -43,9 +43,9 @@ function TopRated() {
    }
   return (
    <>
-    <div className='mx-20 lg:mx-50 my-20 lg:my-50'>
+    <div className='mx-20 lg:mx-50 my-35 lg:my-50'>
     <div className=' md:my-60 '>
-      <div className='text-center my-10'>
+      <div className='text-center my-16 md:py-0 py-10'>
       <TitleSection title="TOP SELLING PRODUCTS"/>
       </div>
   
@@ -60,8 +60,8 @@ function TopRated() {
           ))
         }
       </div>
-      <div className='text-center  my-10'>
-      <ViewAll />
+      <div className='text-center md:my-10  my-20'>
+      <ViewAll  />
       </div>
      
     </div>

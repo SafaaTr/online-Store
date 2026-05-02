@@ -20,7 +20,7 @@ function Filters({price,setPrice,rating,setRating,selectedCategories,setSelected
     } else {
       setSelectedCategories([...selectedCategories ,cat])
     }
-    closeMobileFilter(); 
+   
   }
 
   return (
@@ -35,7 +35,7 @@ function Filters({price,setPrice,rating,setRating,selectedCategories,setSelected
         <p className='text-[#00000099] '>$0-${price===260 ? "Infinity" :`${price}`}</p>
     
         <input type="range" max={500} min={0} value={price} onChange={(e)=>{setPrice(e.target.value)
-           closeMobileFilter()}} className='w-full text-black my-10 custom-range '/>
+           }} className='w-full text-black my-10 custom-range '/>
       </div>
               {/*rating */}
       <div className='pt-10'>
@@ -46,7 +46,7 @@ function Filters({price,setPrice,rating,setRating,selectedCategories,setSelected
             <span
               key={star}
               onClick={()=>{setRating(star)
-                closeMobileFilter()}
+                }
               }
               className='text-lg cursor-pointer '
             >

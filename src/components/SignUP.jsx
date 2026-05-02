@@ -11,7 +11,7 @@ function SignUP() {
          label:"Name",
           type:"text",
           name:"full-name",
-          placeholder:"First name"
+          placeholder:"Full name"
         },
        
         {
@@ -36,8 +36,8 @@ function SignUP() {
       link:"/"
     }
   ]
-  const handleSignUp=(formData)=>{
-    localStorage.setItem("user-name", formData.name)
+  const handleSignUp=(formData)=>{//تخزين 
+    localStorage.setItem("user-name", formData["full-name"])
     localStorage.setItem("isLoggedIn" , "true")
     window.location.href="/"
   }

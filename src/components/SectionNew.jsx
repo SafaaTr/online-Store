@@ -25,7 +25,7 @@ function SectionNew() {
 
    if (loading) {
     return(
-    <div className='mx-20 lg:mx-50 my-20 lg:my-50'>
+    <div className='mx-20 lg:mx-50 my-35 lg:my-50'>
       <div className=' md:my-60 '>
         <div className='text-center my-10'>
           <TitleSection title="NEW ARRIVALS"/>
@@ -49,7 +49,7 @@ function SectionNew() {
    <>
     <div className='mx-20 lg:mx-50 my-20 lg:my-50'>
       <div className=' md:my-60 '>
-        <div className='text-center my-10'>
+        <div className='text-center my-10 md:py-0 py-10'>
         <TitleSection title="NEW ARRIVALS"/>
         </div>
     
@@ -64,7 +64,7 @@ function SectionNew() {
           }
           
         </div>
-        <div className='text-center my-10'>
+        <div className='text-center md:my-10  my-20'>
         <ViewAll />
         </div>
        

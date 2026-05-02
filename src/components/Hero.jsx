@@ -38,10 +38,10 @@ function Hero() {
         <button className='w-190 h-50 md:my-0 my-10 bg-black text-white text-center rounded-3xl cursor-pointer transition-all duration-300  hover:-translate-y-3 hover:shadow-2xl'>
             <Link to="/shop">{contentHero.textButton}</Link>
         </button>
-        <div className='md:flex flex-wrap gap-10 justify-between items-center lg:mr-700 pt-20'>
+        <div className='md:flex flex-wrap gap-10 justify-between items-center lg:mr-700 pt-40'>
             {
                 contentHero.statistice.map((item, index)=>(
-                    <div key={index} className='md:my-0 my-10'>
+                    <div key={index} className='md:my-0 my-16'>
                         <h2 className='font-semibold text-2xl md:text-3xl md:my-0 my-4'>{item.title}</h2>
                         <p className='text-[#00000099] text-[12px] mt-5'>{item.paragraph}</p>
                     </div>

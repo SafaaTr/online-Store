@@ -56,21 +56,21 @@ function CartPage() {
         <div>
         {cart.map(item => (
                   <div key={item.id} className=" md:w-1200 md:flex gap-30 my-10 justify-between px-20  py-20 items-center border rounded-2xl ">
-                    <div className=' w-160 h-160 bg-gray-100 flex justify-center items-center rounded-2xl'>
+                    <div className=' w-160 h-160 bg-gray-100 flex justify-center items-center rounded-2xl md:mx-0 mx-auto '>
                     <img src={item.image} className="w-full h-full" />
                     </div>
                     <div>
-                      <h2 className='font-semibold my-10'>{item.title}</h2>
-                      <p className='text-center pt-10 text-[#00000099]'>${item.price}</p>
+                      <h2 className='font-semibold md:text-start text-center my-10'>{item.title}</h2>
+                      <p className='text-center pt-10 md:mb-0 mb-10  text-[#00000099]'>${item.price}</p>
                     </div>
-                    <div className='w-200 h-60 bg-gray-300 rounded-3xl flex justify-between items-center px-20'>
+                    <div className='w-full md:w-200 h-50 bg-gray-300 rounded-3xl flex justify-between items-center px-20'>
                         <button className='block' onClick={()=>increase(item.id)}><FaPlus size={20}/> </button>
                         <span className='text-center'>{item.quantity}</span> 
                         <button className='block font-black' onClick={()=>decrease(item.id)} ><FaMinus size={20}/> </button>
                     </div>
                     <button 
                         onClick={() => removeItem(item.id)}
-                        className="w-100 h-45 px-4 py-2 mt-4 bg-red-600 text-white rounded-2xl " 
+                        className="md:w-100 w-full  h-45 px-4 py-2 mt-10 md:mt-4 bg-red-600 text-white rounded-2xl " 
                       >Remove
                     </button>
                   </div>

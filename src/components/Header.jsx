@@ -16,7 +16,3 @@ function Header() {
 }
 
 export default Header
-{/**
-  style={{backgroundImage:`url(${imgHero})`, backgroundRepeat:`no-repeat`, backgroundSize:'cover'}} 
-  className={`h-screen  pt-96 w-full    object-fill bg-center `}
- */}
